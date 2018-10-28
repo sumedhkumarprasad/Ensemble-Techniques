@@ -1,0 +1,1112 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10400.17.0915.2112                               -->
+<workbook original-version='10.4' source-build='10.4.0 (10400.17.0915.2112)' source-platform='win' version='10.4' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='hr_working' inline='true' name='federated.1m1qdzh10az22e18an7tn05hxgwo' version='10.4'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hr_working' name='textscan.0p3uu9o1ionbxs116098v1elizpd'>
+            <connection class='textscan' directory='D:/Great Lakes PGPDSE/Great Lakes/13 Ensemble Techniques/Mini Project' filename='hr_working.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0p3uu9o1ionbxs116098v1elizpd' name='hr_working.csv' table='[hr_working#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Attrition' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='BusinessTravel' ordinal='2' />
+            <column datatype='integer' name='DailyRate' ordinal='3' />
+            <column datatype='string' name='Department' ordinal='4' />
+            <column datatype='integer' name='DistanceFromHome' ordinal='5' />
+            <column datatype='string' name='Education' ordinal='6' />
+            <column datatype='string' name='EducationField' ordinal='7' />
+            <column datatype='integer' name='EmployeeCount' ordinal='8' />
+            <column datatype='integer' name='EmployeeNumber' ordinal='9' />
+            <column datatype='string' name='EnvironmentSatisfaction' ordinal='10' />
+            <column datatype='string' name='Gender' ordinal='11' />
+            <column datatype='integer' name='HourlyRate' ordinal='12' />
+            <column datatype='string' name='JobInvolvement' ordinal='13' />
+            <column datatype='string' name='JobLevel' ordinal='14' />
+            <column datatype='string' name='JobRole' ordinal='15' />
+            <column datatype='string' name='JobSatisfaction' ordinal='16' />
+            <column datatype='string' name='MaritalStatus' ordinal='17' />
+            <column datatype='integer' name='MonthlyIncome' ordinal='18' />
+            <column datatype='integer' name='MonthlyRate' ordinal='19' />
+            <column datatype='integer' name='NumCompaniesWorked' ordinal='20' />
+            <column datatype='string' name='OverTime' ordinal='21' />
+            <column datatype='integer' name='PercentSalaryHike' ordinal='22' />
+            <column datatype='string' name='PerformanceRating' ordinal='23' />
+            <column datatype='string' name='RelationshipSatisfaction' ordinal='24' />
+            <column datatype='integer' name='StandardHours' ordinal='25' />
+            <column datatype='string' name='StockOptionLevel' ordinal='26' />
+            <column datatype='integer' name='TotalWorkingYears' ordinal='27' />
+            <column datatype='integer' name='TrainingTimesLastYear' ordinal='28' />
+            <column datatype='string' name='WorkLifeBalance' ordinal='29' />
+            <column datatype='integer' name='YearsAtCompany' ordinal='30' />
+            <column datatype='integer' name='YearsInCurrentRole' ordinal='31' />
+            <column datatype='integer' name='YearsSinceLastPromotion' ordinal='32' />
+            <column datatype='integer' name='YearsWithCurrManager' ordinal='33' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Attrition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Attrition]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>Attrition</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BusinessTravel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BusinessTravel]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>BusinessTravel</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DailyRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DailyRate]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>DailyRate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DistanceFromHome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DistanceFromHome]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>DistanceFromHome</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EducationField</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EducationField]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>EducationField</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmployeeCount]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>EmployeeCount</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmployeeNumber]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>EmployeeNumber</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnvironmentSatisfaction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EnvironmentSatisfaction]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>EnvironmentSatisfaction</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HourlyRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HourlyRate]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>HourlyRate</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobInvolvement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JobInvolvement]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>JobInvolvement</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobLevel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JobLevel]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>JobLevel</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobRole</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JobRole]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>JobRole</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobSatisfaction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JobSatisfaction]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>JobSatisfaction</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaritalStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MaritalStatus]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>MaritalStatus</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyIncome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MonthlyIncome]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>MonthlyIncome</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MonthlyRate]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>MonthlyRate</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumCompaniesWorked</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumCompaniesWorked]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>NumCompaniesWorked</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OverTime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OverTime]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>OverTime</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PercentSalaryHike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PercentSalaryHike]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>PercentSalaryHike</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PerformanceRating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PerformanceRating]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>PerformanceRating</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RelationshipSatisfaction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RelationshipSatisfaction]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>RelationshipSatisfaction</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StandardHours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[StandardHours]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>StandardHours</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StockOptionLevel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StockOptionLevel]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>StockOptionLevel</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalWorkingYears</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalWorkingYears]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>TotalWorkingYears</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TrainingTimesLastYear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TrainingTimesLastYear]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>TrainingTimesLastYear</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WorkLifeBalance</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WorkLifeBalance]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>WorkLifeBalance</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsAtCompany</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsAtCompany]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>YearsAtCompany</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsInCurrentRole</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsInCurrentRole]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>YearsInCurrentRole</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsSinceLastPromotion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsSinceLastPromotion]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>YearsSinceLastPromotion</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsWithCurrManager</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsWithCurrManager]</local-name>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias>YearsWithCurrManager</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hr_working.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Business Travel' datatype='string' name='[BusinessTravel]' role='dimension' type='nominal' />
+      <column caption='Daily Rate' datatype='integer' name='[DailyRate]' role='measure' type='quantitative' />
+      <column caption='Distance From Home' datatype='integer' name='[DistanceFromHome]' role='measure' type='quantitative' />
+      <column caption='Education Field' datatype='string' name='[EducationField]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+      <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
+      <column caption='Employee Number' datatype='integer' name='[EmployeeNumber]' role='dimension' type='ordinal' />
+      <column caption='Environment Satisfaction' datatype='string' name='[EnvironmentSatisfaction]' role='dimension' type='nominal' />
+      <column caption='Hourly Rate' datatype='integer' name='[HourlyRate]' role='measure' type='quantitative' />
+      <column caption='Job Involvement' datatype='string' name='[JobInvolvement]' role='dimension' type='nominal' />
+      <column caption='Job Level' datatype='string' name='[JobLevel]' role='dimension' type='nominal' />
+      <column caption='Job Role' datatype='string' name='[JobRole]' role='dimension' type='nominal' />
+      <column caption='Job Satisfaction' datatype='string' name='[JobSatisfaction]' role='dimension' type='nominal' />
+      <column caption='Marital Status' datatype='string' name='[MaritalStatus]' role='dimension' type='nominal' />
+      <column caption='Monthly Income' datatype='integer' name='[MonthlyIncome]' role='measure' type='quantitative' />
+      <column caption='Monthly Rate' datatype='integer' name='[MonthlyRate]' role='measure' type='quantitative' />
+      <column caption='Num Companies Worked' datatype='integer' name='[NumCompaniesWorked]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Over Time' datatype='string' name='[OverTime]' role='dimension' type='nominal' />
+      <column caption='Percent Salary Hike' datatype='integer' name='[PercentSalaryHike]' role='measure' type='quantitative' />
+      <column caption='Performance Rating' datatype='string' name='[PerformanceRating]' role='dimension' type='nominal' />
+      <column caption='Relationship Satisfaction' datatype='string' name='[RelationshipSatisfaction]' role='dimension' type='nominal' />
+      <column caption='Standard Hours' datatype='integer' name='[StandardHours]' role='measure' type='quantitative' />
+      <column caption='Stock Option Level' datatype='string' name='[StockOptionLevel]' role='dimension' type='nominal' />
+      <column caption='Total Working Years' datatype='integer' name='[TotalWorkingYears]' role='measure' type='quantitative' />
+      <column caption='Training Times Last Year' datatype='integer' name='[TrainingTimesLastYear]' role='dimension' type='quantitative' />
+      <column caption='Work Life Balance' datatype='string' name='[WorkLifeBalance]' role='dimension' type='nominal' />
+      <column caption='Years At Company' datatype='integer' name='[YearsAtCompany]' role='measure' type='quantitative' />
+      <column caption='Years In Current Role' datatype='integer' name='[YearsInCurrentRole]' role='measure' type='quantitative' />
+      <column caption='Years Since Last Promotion' datatype='integer' name='[YearsSinceLastPromotion]' role='measure' type='quantitative' />
+      <column caption='Years With Curr Manager' datatype='integer' name='[YearsWithCurrManager]' role='measure' type='quantitative' />
+      <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.557143' measure-ordering='alphabetic' measure-percentage='0.442857' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Education:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bachelor&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Doctor&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Below College&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;College&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Master&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Medical Dataset'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hr_working' name='federated.1m1qdzh10az22e18an7tn05hxgwo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m1qdzh10az22e18an7tn05hxgwo'>
+            <column caption='Education Field' datatype='string' name='[EducationField]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EducationField]' derivation='None' name='[none:EducationField:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EmployeeCount]' derivation='Sum' name='[sum:EmployeeCount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.1m1qdzh10az22e18an7tn05hxgwo].[none:Education:nk]' direction='DESC' using='[federated.1m1qdzh10az22e18an7tn05hxgwo].[sum:EmployeeCount:qk]'>
+            <groupfilter function='member' level='[none:EducationField:nk]' member='&quot;Life Sciences&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1m1qdzh10az22e18an7tn05hxgwo].[sum:EmployeeCount:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1m1qdzh10az22e18an7tn05hxgwo].[sum:EmployeeCount:qk]' />
+              <text column='[federated.1m1qdzh10az22e18an7tn05hxgwo].[sum:EmployeeCount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1m1qdzh10az22e18an7tn05hxgwo].[none:Education:nk]</rows>
+        <cols>[federated.1m1qdzh10az22e18an7tn05hxgwo].[none:EducationField:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Work life banlance Vs Department'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hr_working' name='federated.1m1qdzh10az22e18an7tn05hxgwo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m1qdzh10az22e18an7tn05hxgwo'>
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
+            <column caption='Work Life Balance' datatype='string' name='[WorkLifeBalance]' role='dimension' type='nominal' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[WorkLifeBalance]' derivation='None' name='[none:WorkLifeBalance:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EmployeeCount]' derivation='Sum' name='[sum:EmployeeCount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1m1qdzh10az22e18an7tn05hxgwo].[sum:EmployeeCount:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1m1qdzh10az22e18an7tn05hxgwo].[sum:EmployeeCount:qk]' />
+              <text column='[federated.1m1qdzh10az22e18an7tn05hxgwo].[sum:EmployeeCount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1m1qdzh10az22e18an7tn05hxgwo].[none:Department:nk]</rows>
+        <cols>[federated.1m1qdzh10az22e18an7tn05hxgwo].[none:WorkLifeBalance:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Work life banlance Vs Department'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1m1qdzh10az22e18an7tn05hxgwo].[sum:EmployeeCount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' maximized='true' name='Medical Dataset'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1m1qdzh10az22e18an7tn05hxgwo].[sum:EmployeeCount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1m1qdzh10az22e18an7tn05hxgwo].[none:EducationField:nk]</field>
+            <field>[federated.1m1qdzh10az22e18an7tn05hxgwo].[none:JobLevel:nk]</field>
+            <field>[federated.1m1qdzh10az22e18an7tn05hxgwo].[none:StockOptionLevel:nk]</field>
+            <field>[federated.1m1qdzh10az22e18an7tn05hxgwo].[sum:EmployeeCount:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='164' name='Medical Dataset' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='104' name='Work life banlance Vs Department' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
